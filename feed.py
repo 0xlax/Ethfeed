@@ -35,23 +35,50 @@ Modes.MIN_PRIORITY: {}
 
 mode_params = {
 	
-	Modes.LATEST_FEES: {},
-Modes.BOXPLOT: {},
-Modes.BOXPLOT_NO_OUTLINERS: {},
-Modes.FULLNESS: {},
-Modes.BASE: {},
-Modes.BURN: {},
-Modes.MEDIAN_PRIORITY: {},
-Modes.MAX_RATIO: {},
-Modes.MIN_PRIORITY: {}
+	ModeNames.LATEST_FEES: {
+
+	},
+	ModeNames.BOXPLOT: {
+
+	},
+	ModeNames.BOXPLOT_NO_OUTLINERS: {
+
+	},
+	ModeNames.FULLNESS: {
+
+	},
+	ModeNames.BASE: {
+
+	},
+	ModeNames.BURN: {
+
+	},
+	ModeNames.MEDIAN_PRIORITY: {
+
+	},
+	ModeNames.MAX_RATIO: {
+
+	},
+	ModeNames.MIN_PRIORITY: {
+
+	}
 }
+
+
+block_call_ids = count();
+
+
+def hex_to_int(hex_string):
+	if hex_string:
+		return int(hex_string, 16)
+	else:
+		return None
+
 
 
 
 def main():
 
-	for i in ModeNames:
-		print(i)
 
 
 
